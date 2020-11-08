@@ -1,20 +1,28 @@
 #red {
-	
+    position: absolute;
+    top: 300px;
+    left: 400px;
 }
 
 #silver {
-
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    z-index: -1;
 }
 
 #green {
-
+    position: fixed;
+    top: 50px;
+    right: 0;
 }
 
 #blue {
-
+    position: relative;
 }
 
 #yellow {
-
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
-
