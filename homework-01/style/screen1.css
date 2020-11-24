@@ -16,7 +16,7 @@ body {
 
 #login {
 	/* flex: 1; */
-
+    box-sizing: border-box;
 	padding: 2.5rem;
 
 	max-width: 32rem;
@@ -33,17 +33,18 @@ body {
 
 #form {
 	display: flex;
-	flex-direction: column;
+    flex-direction: column;
 }
 
 #form legend {
 	color: #848694;
-	margin-bottom: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 #email,
 #password {
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-bottom: 15px;
 	border-top-style: hidden;
 	border-right-style: hidden;
@@ -60,23 +61,31 @@ body {
 }
 
 #submit-button {
-	box-sizing: border-box;
-    margin-top: 30px;
-    margin-right: 0;
+    align-self: flex-end;
 
-	max-width: 10rem;
+    margin-top: 30px;
+
+    max-width: 10rem;
+    width: 160px;
 	height: 35px;
 
 	background-color: #4cc4d3;
     color: white;
+    font-size: 16px;
     
 	border: none;
 	border-radius: 25px;
 }
 
 #create-account {
+    align-self: flex-end;
+
     margin-top: 20px;
+    
+    max-width: 10rem;
+    width: 160px;
+
+    text-align: center;
     color: blue;
     text-decoration: none;
-    /* font-size: 16px; */
 }
