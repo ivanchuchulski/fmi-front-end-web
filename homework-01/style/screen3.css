@@ -1,0 +1,34 @@
+* {
+	font-family: Helvetica, sans-serif;
+}
+
+body {
+	font-size: 16px;
+	
+}
+
+#search-flex-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 100%;
+}
+
+#posts-flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
+}
+
+#profile {
+    max-width: 18rem;
+    width: 150px;
+}
+
+#posts {
+    max-width: 55rem;
+    width: 400px;
+}
