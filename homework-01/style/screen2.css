@@ -1,0 +1,32 @@
+* {
+	font-family: Helvetica, sans-serif;
+}
+
+body {
+	font-size: 16px;
+	background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
+}
+
+.Aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 24em;
+}
+
+.Aligner-item {
+	flex: 1;
+}
+
+.Aligner-item--top {
+	align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+	align-self: flex-end;
+}
+
+.Aligner-item--fixed {
+	flex: none;
+	max-width: 50%;
+}
