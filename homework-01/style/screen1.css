@@ -3,30 +3,80 @@
 }
 
 body {
-    font-size: 16px;
-    background-image: linear-gradient(-100deg, #A2F2F1 0%, #B19AFE 100%);
+	font-size: 16px;
+	background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
 }
 
 #flex-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 #login {
-    flex: 1;
-    max-width: 32rem;
-    width: 90%;
-    padding: 2.5rem;
+	/* flex: 1; */
 
-    background-color: white;
-    border: 1px solid black;
+	padding: 2.5rem;
+
+	max-width: 32rem;
+	width: 90%;
+
+	background-color: white;
+	border-radius: 10px;
+}
+
+#login header {
+	font-size: 32px;
+	margin-bottom: 20px;
 }
 
 #form {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
 
-   
+#form legend {
+	color: #848694;
+	margin-bottom: 30px;
+}
+
+#email,
+#password {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	border-top-style: hidden;
+	border-right-style: hidden;
+	border-left-style: hidden;
+
+	border-bottom: 2px solid #eae8f1;
+	outline: none;
+}
+
+#email:focus,
+#password:focus {
+	border-bottom: 2px solid #928dce;
+	outline: none;
+}
+
+#submit-button {
+	box-sizing: border-box;
+    margin-top: 30px;
+    margin-right: 0;
+
+	max-width: 10rem;
+	height: 35px;
+
+	background-color: #4cc4d3;
+    color: white;
+    
+	border: none;
+	border-radius: 25px;
+}
+
+#create-account {
+    margin-top: 20px;
+    color: blue;
+    text-decoration: none;
+    /* font-size: 16px; */
 }
