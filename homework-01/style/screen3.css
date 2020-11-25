@@ -14,6 +14,46 @@ body {
     width: 100%;
 }
 
+#search {
+    border-radius: 25px;
+}
+
+#profile {
+    height: 100vh;
+    max-width: 18rem;
+
+    /* width to be determined */
+    width: 430px;
+
+    margin-top: 10px;
+}
+
+#profile-info {
+    height: 200px;
+    background-color: white;
+}
+
+#metrics {
+    display: flex;
+    flex-direction: row;
+
+    background-color: wheat;
+}
+
+#post-count {
+    align-self: flex-start;
+}
+
+#reactions-count {
+    align-self: flex-start;
+}
+
+#log-out-button {
+    align-self: flex-end;
+    border-radius: 25px;
+    border: none;
+}
+
 #posts-flex-wrapper {
     display: flex;
     flex-direction: row;
@@ -23,12 +63,19 @@ body {
     background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
 }
 
-#profile {
-    max-width: 18rem;
-    width: 150px;
-}
-
 #posts {
+    height: 100vh;
     max-width: 55rem;
     width: 400px;
+
+    margin-top: 10px;
+}
+
+#make-comment {
+    height: 65px;
+    background-color: wheat;
+}
+
+.post {
+    background-color: white;
 }
