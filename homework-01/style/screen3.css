@@ -14,21 +14,21 @@ body {
 }
 
 #search-field-wrapper {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-    width: 250px;
-    height: 45px;
+	width: 250px;
+	height: 45px;
 
-    border-radius: 25px;
-    background-color: #f6f7fc;
-    border: 1px ;
+	border-radius: 25px;
+	background-color: #f6f7fc;
+	border: 1px;
 }
 
 #heading {
-    font-size: 3rem;
+	font-size: 3rem;
 }
 
 #profile {
@@ -36,35 +36,71 @@ body {
 	max-width: 18rem;
 
 	/* width to be determined */
-	width: 430px;
+	width: 350px;
 
 	margin-top: 10px;
 }
 
 #profile-info {
-	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	box-sizing: border-box;
 	background-color: white;
+}
+
+#profile-icon {
+	height: 125px;
+	width: 125px;
+	border-radius: 50px;
 }
 
 #metrics {
 	display: flex;
-	flex-direction: row;
+    flex-direction: row;
+    align-items: center;
 
-	background-color: wheat;
+	background-color: #f6f7fd;
 }
 
-#post-count {
-	align-self: flex-start;
+#metrics > section {
+    margin: 0px 5px 0px 5px;
 }
 
-#reactions-count {
-	align-self: flex-start;
+.metric-heading {
+    color: #a9a9b4;
 }
 
-#log-out-button {
-	align-self: flex-end;
-	border-radius: 25px;
-	border: none;
+#post-count > *,
+#reactions-count > *  {
+    margin: 10px 5px 10px 5px;
+}
+
+.counter { 
+    color: #6ca7a9;
+    font-weight: bold;
+}
+
+#log-out {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#log-out-button { 
+    margin-right: 10px;
+    width: 75px;
+    height: 35px;
+    color: #6ca7a9;
+    background-color: #f5f3fa;
+    
+    border: 1px solid #6ca7a9;
+    border-radius: 25px;
+    
+    font-weight: bold;
 }
 
 #posts-flex-wrapper {
@@ -86,7 +122,9 @@ body {
 
 #make-comment {
 	height: 65px;
-	background-color: wheat;
+	/* made the color a bit darker to see */
+	/* color picker from gimp gives #f6f7fc */
+	background-color: #e7e8ec;
 }
 
 .post {
@@ -95,5 +133,5 @@ body {
 
 #comment-icon {
 	font-size: 1rem;
-	color: #97c0c2
+	color: #97c0c2;
 }
