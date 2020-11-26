@@ -5,17 +5,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>screen3</title>
 		<link rel="stylesheet" href="style/screen3.css" />
+		<script src="https://kit.fontawesome.com/ad5eca15f1.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<section id="search-flex-wrapper">
-			<header>Flutter</header>
-			<input type="search" name="search" id="search" placeholder="Search" />
+			<header id="heading">Flutter</header>
+			<div id="search-field-wrapper">
+				<span id="search-text">Search</span>
+				<i class="fas fa-search"></i>
+			</div>
 		</section>
 		<section id="posts-flex-wrapper">
 			<section id="profile">
 				<section id="profile-info">
 					<img src="" alt="profile icon" />
-					<p>Martin Hristov</p>
+					<span id="comment-icon">
+						<i class="far fa-comment-alt"></i>
+					</span>
+					<p style="font-size: 2rem;">Martin Hristov</p>
 				</section>
 				<section id="metrics">
 					<section id="post-count">
@@ -26,7 +33,7 @@
 						<p>Reactions</p>
 						<img src="" alt="7" />
 					</section>
-					<input type="submit" value="Log Out" id="log-out-button">
+					<input type="submit" value="Log Out" id="log-out-button" />
 				</section>
 			</section>
 			<section id="posts">
