@@ -6,14 +6,14 @@ body {
 	font-size: 16px;
 }
 
-#search-flex-wrapper {
+#heading-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
 }
 
-#search-field-wrapper {
+#search-field {
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -22,6 +22,8 @@ body {
 	width: 250px;
 	height: 45px;
 
+	margin-right: 48px;
+
 	border-radius: 25px;
 	background-color: #f6f7fc;
 	border: 1px;
@@ -29,11 +31,7 @@ body {
 
 #heading {
 	font-size: 3rem;
-	margin-left: 48pxrem;
-}
-
-#search-field-wrapper {
-	margin-right: 48px;
+	margin-left: 48px;
 }
 
 #search-text {
@@ -52,6 +50,7 @@ body {
 	width: 350px;
 
 	margin-top: 10px;
+	margin-right: 5px;
 }
 
 #profile-info {
@@ -116,7 +115,7 @@ body {
     font-weight: bold;
 }
 
-#posts-flex-wrapper {
+#posts-wrapper {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -128,16 +127,54 @@ body {
 #posts {
 	height: 100vh;
 	max-width: 55rem;
-	width: 400px;
+	width: 850px;
 
 	margin-top: 10px;
+	margin-left: 5px;
 }
 
-#make-comment {
+#make-post {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
 	height: 65px;
-	/* made the color a bit darker to see */
-	/* color picker from gimp gives #f6f7fc */
+
 	background-color: #e7e8ec;
+}
+
+#small-profile-icon {
+	width: 2rem;
+	height: 2rem;
+
+	margin-left: 48px;
+
+	border-radius: 50px;
+}
+
+#post-content {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 680px;
+	height: 45px;
+
+	margin-right: 48px;
+
+	border-radius: 25px;
+	background-color: #f6f7fc;
+	border: 1px;
+}
+
+#post-placeholder {
+	margin-left: 24px;
+}
+
+#comment-icon {
+	margin-right: 24px;
 }
 
 .post {
