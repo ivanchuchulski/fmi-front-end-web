@@ -71,48 +71,48 @@ body {
 
 #metrics {
 	display: flex;
-    flex-direction: row;
-    align-items: center;
+	flex-direction: row;
+	align-items: center;
 
 	background-color: #f6f7fd;
 }
 
 #metrics > section {
-    margin: 0px 5px 0px 5px;
+	margin: 0px 5px 0px 5px;
 }
 
 .metric-heading {
-    color: #a9a9b4;
+	color: #a9a9b4;
 }
 
 #post-count > *,
-#reactions-count > *  {
-    margin: 10px 5px 10px 5px;
+#reactions-count > * {
+	margin: 10px 5px 10px 5px;
 }
 
-.counter { 
-    color: #6ca7a9;
-    font-weight: bold;
+.counter {
+	color: #6ca7a9;
+	font-weight: bold;
 }
 
 #log-out {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 100%;
 }
 
-#log-out-button { 
-    margin-right: 10px;
-    width: 75px;
-    height: 35px;
-    color: #6ca7a9;
-    background-color: #f5f3fa;
-    
-    border: 1px solid #6ca7a9;
-    border-radius: 25px;
-    
-    font-weight: bold;
+#log-out-button {
+	margin-right: 10px;
+	width: 75px;
+	height: 35px;
+	color: #6ca7a9;
+	background-color: #f5f3fa;
+
+	border: 1px solid #6ca7a9;
+	border-radius: 25px;
+
+	font-weight: bold;
 }
 
 #posts-wrapper {
@@ -153,7 +153,7 @@ body {
 	border-radius: 50px;
 }
 
-#post-content {
+#post-field {
 	box-sizing: border-box;
 	display: flex;
 	align-items: center;
@@ -175,13 +175,60 @@ body {
 
 #comment-icon {
 	margin-right: 24px;
+
+	font-size: 1rem;
+	color: #97c0c2;
+}
+
+#feed:last-child {
+	border-bottom: none;
 }
 
 .post {
+	display: flex;
+	flex-direction: row;
+
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
 	background-color: white;
 }
 
-#comment-icon {
-	font-size: 1rem;
-	color: #97c0c2;
+.post > * {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.post-contents {
+	display: flex;
+	flex-direction: column;
+}
+
+.author {
+	display: flex;
+	flex-direction: row;
+}
+
+.likes {
+	display: flex;
+	flex-direction: row;
+}
+
+#dot-separator {
+	height: 1px;
+	width: 1px;
+
+	margin-left: 3px;
+	margin-right: 3px;
+
+	color: grey;
+}
+
+#medium-profile-icon {
+	width: 2.5rem;
+	height: 2.5rem;
+
+	padding-top: 16px;
+	margin-left: 44px;
+
+	border-radius: 50px;
 }
