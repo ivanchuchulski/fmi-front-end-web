@@ -284,10 +284,14 @@ main {
 
 	main {
 		flex-direction: column;
+		justify-content: flex-start;
 		align-items: center;
+
+		padding-top: 0.5rem;
 	}
 
 	#profile {
+		max-width: 90%;
 		width: 90%;
 		margin: 0px;
 	}
@@ -318,14 +322,29 @@ main {
 		height: 3rem;
 	}
 
+	#small-profile-icon {
+		margin-left: 1.5rem;
+		margin-right: 0.5rem;
+	}
+
+	#post-field {
+		margin-left: 0.5rem;
+		margin-right: 1.5rem;
+	}
+
 	.post {
 		min-height: 7rem;
 		font-size: 0.875rem;
-		padding: 1rem;
+		padding: 0.5rem;
+	}
+
+	.post > * {
+		margin-top: 0.3rem;
+		margin-right: 0.5rem;
 	}
 
 	.medium-profile-icon {
-		margin-left: 1.5rem;
+		margin-left: 0.5rem;
 	}
 
 }
