@@ -2,33 +2,31 @@
 	font-family: Helvetica, sans-serif;
 }
 
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
+	height: 100%;
+	width: 100%;
+
+	margin: 0px;
+
 	font-size: 16px;
+
 	background-image: linear-gradient(-100deg, #a2f2f1 0%, #b19afe 100%);
 }
 
-#flex-wrapper {
+main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	height: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-	#login {
-		box-sizing: border-box;
-		padding: 2.5rem;
-	
-		max-width: 32rem;
-		width: 90%;
-	
-		background-color: white;
-		border-radius: 10px;
-	}
-}
-
-#login {
-    box-sizing: border-box;
+#registration {
+	box-sizing: border-box;
 	padding: 2.5rem;
 
 	max-width: 32rem;
@@ -38,20 +36,20 @@ body {
 	border-radius: 10px;
 }
 
-#login header {
+header {
 	font-size: 32px;
 	margin-bottom: 20px;
 }
 
-#form {
+form {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 }
 
-#form legend {
+form legend {
 	color: #848694;
-    margin-bottom: 20px;
-    font-size: 18px;
+	margin-bottom: 20px;
+	font-size: 18px;
 }
 
 #username,
@@ -59,6 +57,9 @@ body {
 #password {
 	margin-top: 30px;
 	margin-bottom: 15px;
+
+	padding-bottom: 10px;
+
 	border-top-style: hidden;
 	border-right-style: hidden;
 	border-left-style: hidden;
@@ -75,18 +76,22 @@ body {
 }
 
 #submit-button {
-    align-self: flex-end;
+	align-self: flex-end;
 
-    margin-top: 30px;
+	margin-top: 30px;
 
-    max-width: 10rem;
-    width: 160px;
+	max-width: 10rem;
+	width: 160px;
 	height: 35px;
 
 	background-color: #4cc4d3;
-    color: white;
-    font-size: 16px;
-    
+	color: white;
+	font-size: 16px;
+
 	border: none;
 	border-radius: 25px;
+}
+
+@media only screen and (max-width: 890px) {
+	
 }
